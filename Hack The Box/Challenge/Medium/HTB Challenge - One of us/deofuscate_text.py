@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
 from rijndael.cipher.crypt import new
 from rijndael.cipher.blockcipher import MODE_CBC
 import base64
