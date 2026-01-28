@@ -12,5 +12,5 @@ la capacidad de detectar, interpretar y neutralizar amenazas similares en entorn
 la importancia de comprender en profundidad tanto las técnicas ofensivas como las defensivas en el ámbito de la ciberseguridad contemporánea.
 
 <p align="center">
-<img src="assets/2.png" width="700">
+<img src="assets/1.png" width="700">
 </p>
