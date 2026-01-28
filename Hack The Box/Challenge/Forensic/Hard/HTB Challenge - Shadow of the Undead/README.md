@@ -1,3 +1,5 @@
+# HTB Challenge - Shadow of the Undead
+
 El análisis comenzó con la observación de una serie de TLVs que evidenciaban la inyección de un payload en memoria y la creación de un hilo remoto, un patrón característico de los stagers utilizados por Metasploit. 
 A partir de estos indicadores iniciales, se procedió a extraer el shellcode y a estudiar su estructura interna, identificando rápidamente la presencia de un resolvedor dinámico de APIs y de rutinas propias de un 
 cargador reflectivo. Este comportamiento, junto con la secuencia de funciones resueltas, permitió atribuir con alta confianza el payload a un stager reflectivo diseñado para cargar un componente secundario 
