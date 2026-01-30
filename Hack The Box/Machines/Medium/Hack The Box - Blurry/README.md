@@ -15,3 +15,6 @@ Este ejercicio no solo demostró la viabilidad de ataques de attack chaining en 
 la validación estricta de artefactos y la integración efectiva de herramientas de análisis en pipelines de producción. La resolución se desarrolló íntegramente en un entorno controlado de laboratorio, 
 siguiendo principios de ética profesional y divulgación responsable.
 
+<p align="center">
+<img src="assets/1.png" width="700">
+</p>
