@@ -18,10 +18,6 @@ def validate_aes_key(key: bytes):
     - 16 bytes (AES-128)
     - 24 bytes (AES-192)
     - 32 bytes (AES-256)
-
-    Esta validación es esencial para evitar errores silenciosos
-    durante el descifrado y para asegurar que la clave extraída
-    de un artefacto forense es coherente.
     """
     if len(key) not in (16, 24, 32):
         raise ValueError(
@@ -44,9 +40,6 @@ def extract_iv_and_ciphertext(full_data: bytes, iv: bytes = None):
     - Si el IV se pasa manualmente, debe medir exactamente 16 bytes.
     - Si el IV está embebido, el buffer debe tener al menos 16 bytes.
     - El ciphertext restante debe ser múltiplo del tamaño de bloque AES.
-
-    Esto es crucial en análisis forense, donde los artefactos pueden estar
-    truncados, dañados o manipulados, y necesitamos detectar inconsistencias.
     """
 
     # Caso 1: El IV se proporciona externamente
@@ -85,10 +78,6 @@ def decrypt_aes_cbc(ciphertext: bytes, key: bytes, iv: bytes) -> bytes:
     - El IV y la clave ya han sido validados.
     - El ciphertext tiene un tamaño correcto.
     - No realiza unpad; solo descifra el bloque tal cual.
-
-    Mantener esta función simple y aislada facilita el análisis
-    forense, ya que permite inspeccionar el resultado bruto antes
-    de aplicar el padding.
     """
     cipher = AES.new(key, AES.MODE_CBC, iv)
     return cipher.decrypt(ciphertext)
