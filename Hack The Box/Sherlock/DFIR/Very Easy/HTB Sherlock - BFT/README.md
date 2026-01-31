@@ -14,5 +14,5 @@ Además, se destacan técnicas y conceptos clave —como los Alternate Data Stre
 cualquier analista que desee abordar investigaciones de este tipo con profundidad y precisión.
 
 <p align="center">
-<img src="assets/1.png" width="700">
+<img src="assets/2.png" width="700">
 </p>
