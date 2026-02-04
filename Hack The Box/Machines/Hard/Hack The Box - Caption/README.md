@@ -11,3 +11,7 @@ historial de commits, configuraciones laxas en la negociación de protocolos, un
 a path traversal y un componente RPC escrito en Go que carecía de validaciones adecuadas. La explotación
 coordinada de estos elementos permitió atravesar las distintas capas defensivas, obtener acceso inicial
 mediante SSH y, finalmente, escalar privilegios hasta comprometer por completo el sistema.
+
+<p align="center">
+<img src="assets/1.png" width="700">
+</p>
