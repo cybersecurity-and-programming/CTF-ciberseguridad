@@ -13,3 +13,7 @@ Active Directory que facilitaron movimientos laterales y escaladas de privilegio
 implantación de un mecanismo de persistencia mediante un objeto WMI malicioso que ejecutaba código
 remoto a través de mshta. Cada fase del ataque se documenta con precisión, destacando tanto las técnicas
 empleadas por el adversario como las debilidades estructurales que hicieron posible su avance.
+
+<p align="center">
+<img src="assets/1.png" width="700">
+</p>
