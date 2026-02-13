@@ -47,7 +47,7 @@ def franklin_reiter(n, e, ct1, ct2, a1, a2, b1, b2):
 
 """
 # ============================================================
-#  Conversionn segura de entero ? bytes
+#  Conversionn segura de entero -> bytes
 # ============================================================
 
 def int_to_bytes_safe(m):
@@ -119,4 +119,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     exploit(args.ip)
+
 
