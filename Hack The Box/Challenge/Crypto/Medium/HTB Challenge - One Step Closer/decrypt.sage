@@ -108,7 +108,7 @@ def exploit(host):
     #flag = int_to_bytes_safe(M)
     flag = long_to_bytes(M)
 
-    print(f"\n[🚀] RESULTADO: {flag.decode(errors='ignore')}")
+    print(f"\n[+] RESULTADO: {flag.decode(errors='ignore')}")
     #print("[+] FLAG =", flag.decode(errors="ignore"))
 
 
@@ -119,3 +119,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     exploit(args.ip)
+
