@@ -11,7 +11,6 @@ def create_file(query: str) -> None:
     Se realizan sustituciones para evitar problemas con ciertos caracteres.
     El archivo resultante se guarda en 'ai.wav'.
     """
-    # Reemplazos de caracteres problemáticos. Ajusta según sea necesario.
     query = query.replace("'", " open single quote ").replace("#", " Pound sign ")
     
     try:
@@ -54,7 +53,7 @@ def parse_response(response_text: str) -> tuple:
     return interpretacion, resultado
 
 def main():
-    url = "http://10.129.17.46/ai.php"
+    url = "http://<IP MAQUINA OBJETIVO>/ai.php"
     # Configura el proxy si es necesario
     # proxies = {'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'}
     proxies = None
